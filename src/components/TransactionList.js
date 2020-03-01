@@ -1,13 +1,7 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import Transaction from "./Transaction";
-import {
-  MDBListGroup,
-  MDBListGroupItem,
-  MDBContainer,
-  MDBIcon,
-  MDBBox
-} from "mdbreact";
+import { MDBListGroup, MDBContainer } from "mdbreact";
 
 const TransactionList = () => {
   const { transactions } = useContext(GlobalContext);

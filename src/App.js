@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import { MDBContainer } from "mdbreact";
 import Header from "./components/Header";
 import IncomeExpense from "./components/IncomeExpense";
@@ -9,9 +9,13 @@ import AddTransaction from "./components/AddTransaction";
 import { GlobalProvider } from "./context/GlobalState";
 
 const App = () => {
+  useEffect(() => {
+    console.log("Hello World");
+  });
+
   return (
     <GlobalProvider>
-      <MDBContainer className="text-center">
+      <MDBContainer className="text-center" style={{ margin: "10vh auto" }}>
         <Header />
         <Balance />
         {/* <GlobalProvider> */}

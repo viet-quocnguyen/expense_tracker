@@ -15,6 +15,7 @@ const IncomeExpense = () => {
       expense += amount;
     }
   });
+
   return (
     <MDBContainer>
       <MDBRow>

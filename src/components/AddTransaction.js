@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import { MDBInputGroup, MDBInput, MDBBtn } from "mdbreact";
+import { MDBInput, MDBBtn } from "mdbreact";
 const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
